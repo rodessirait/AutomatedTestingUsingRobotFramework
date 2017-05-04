@@ -1,0 +1,28 @@
+- Install Python-2.7.12
+- Masukkan path C:\Python27 di Variable Environtment
+- install ez_setup.py
+- buka cmd, ketikkan easy_install php dan klik enter
+- Masukkan Path C:\Python27\Scripts di Variable Environtment
+- ketik easy_install pip dan klik enter
+- ketik kembali pip install robotframework, tunggu sampai proses download selesai
+- ketik kembali pip install robotframework-selenium2library dan klik enter. Tunggu sampai proses download selesai
+- Setelah itu masuk ke cmd dan pindah ke cd C:\Python27
+- Ketik python -m pip install robotframework.
+- Ketik python -m pip install robotframework-selenium2library
+- Ketik python -m pip install --upgrade pip
+- Run .exe wxPython2.8-win32-unicode-2.8.12.1-py27, tunggu sampai installan selesai
+- masuk ke cmd sebelumnya, ketik python -m pip install robotframework-ride
+- Untuk memastikan RIDE sudah terinstal  buka cmd baru.
+- Ketik cd C:\Python27
+- Ketik python Scripts\ride.py
+- Jika RIDE sudah terinstal, RIDE akan me-launch otomatis.
+- Klik File dan pilih Open Directory, pilih Source Automated Testing Using Robot Framework
+- Folder tersebut akan menampilkan resource untuk dijalankan.
+- Centang test case yang ingin dijalankan
+- Klik Run Test
+- Browser akan otomatis membuka test Contact Us tersebut.
+
+**** NOTE *******
+- Library Selenium2Library dan AutoItLibrary harus terinstall di komputer agar dapat melakukan testing.
+- Untuk Folder AutoIT harus diletakkan di C:\
+- Jangan lupa ekstrak file di folder AutoIT

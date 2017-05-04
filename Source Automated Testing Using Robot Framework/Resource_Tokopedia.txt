@@ -1,0 +1,52 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Variables ***
+${URL}            https://www.tokopedia.com/contact-us#step7
+${BROWSER}        ff
+${DETAIL PROBLEM}    Ini hanya untuk test Automated Testing menggunakan Robot Framework
+${DETAIL PROBLEM LOCATOR}    id=ticket_reply_msg
+${FULL NAME}      Rodes Pria Yuter Sirait
+${FULL NAME LOCATOR}    id=full_name
+${EMAIL}          rodessirait01@gmail.com
+${EMAIL LOCATOR}    id=user_email
+${PHONE}          081370252834
+${PHONE LOCATOR}    id=user_phone
+${FILE}           ${EMPTY}
+${FILE LOCATOR}    C:\AutoIT
+${AUTOIT}         C:\\AutoIT\\FileUpload.exe
+${AUTOIT LOCATOR}    id=pickfiles-nav1
+${AUTOIT1}        C:\\AutoIT\\FileUpload1.exe
+${AUTOIT1 LOCATOR}    id=pickfiles-nav1
+${AUTOIT2}        C:\\AutoIT\\FileUpload2.exe
+${AUTOIT2 LOCATOR}    id=pickfiles-nav1
+${AUTOIT3}        C:\\AutoIT\\FileUpload3.exe
+${AUTOIT3 LOCATOR}    id=pickfiles-nav1
+${AUTOIT4}        C:\\AutoIT\\FileUpload4.exe
+${AUTOIT4 LOCATOR}    id=pickfiles-nav1
+
+*** Keywords ***
+Enter Detail Problem
+    [Arguments]    ${DETAIL PROBLEM}
+    Input Text    ${DETAIL PROBLEM LOCATOR}    ${DETAIL PROBLEM}
+    Input Text    xpath=//*[@id="ticket_reply_msg"]    ${DETAIL PROBLEM}
+
+Enter Full Name
+    [Arguments]    ${FULL NAME}
+    Input Text    ${FULL NAME LOCATOR}    ${FULL NAME}
+    Input Text    xpath=//*[@id="full_name"]    ${FULL NAME}
+
+Enter Email
+    [Arguments]    ${EMAIL}
+    Input Text    ${EMAIL LOCATOR}    ${EMAIL}
+    Input Text    xpath=//*[@id="user_email"]    ${EMAIL}
+
+Enter Phone
+    [Arguments]    ${PHONE}
+    Input Text    ${PHONE LOCATOR}    ${PHONE}
+    Input Text    xpath=//*[@id="user_phone"]    ${PHONE}
+
+Enter File
+    [Arguments]    ${FILE}
+    Input Text    ${FILE LOCATOR}    ${FILE}
+    Input Text    xpath=//*[@id="pickfiles-nav1l"]    ${FILE}
